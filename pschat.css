@@ -1,0 +1,711 @@
+.mspdtlabel div{
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.mulearchtypebutton{
+  width: fit-content;
+  margin: auto;
+}
+
+
+button#generatemulearchtype {
+    width: 200px;
+    height: 35px;
+    line-height: 35px;
+    background-color: cornflowerblue;
+    color: white;
+    font-size: 14px;
+    margin-top: 50px;
+}
+
+.mspdtlabel div input{
+    /* text-align: center; */
+    width: 100%;
+    margin-right: 10px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #c3e1fb;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+input#exchprojname {
+    width: 60%;
+    margin-right: 10px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #c3e1fb;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+div#apispecdetails {
+  padding: 25px;
+      font-size: 15px;
+      min-height: 300px;
+      background-color: aliceblue;
+      margin-top: 20px;
+      border-radius: 5px;
+}
+
+.mspdtlabel {
+    /* text-align: center; */
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.mspdtlabel div {
+    /* text-align: center; */
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.specrow div:first-child {
+    text-transform: capitalize;
+    color: gray;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.specrow div:nth-child(2) {
+    color: #5aa9ed;
+    border-bottom: 2px solid black;
+}
+
+.speccol {
+  width: 50%;
+      height: 31px;
+      line-height: 31px;
+      overflow: hidden;
+}
+
+.specrow {
+    display: flex;
+    width: 100%;
+}
+select#exchangeprojects {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #c3e1fb;
+        border-radius: 5px;
+    margin-top: 26px;
+}
+
+button#searchexchange {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.mspcontainer {
+    width: 100%;
+}
+
+.mspbody {
+    display: flex;
+}
+
+.mspbodyright,
+.mspbodyleft {
+    width: 49%;
+    padding: 25px;
+}
+.mulestartprojectinner button,
+.mulestartprojectinner input
+{
+  margin: 0px;
+padding: 0px;
+}
+
+.fetchprojects{
+  display: flex;
+}
+
+.mulestartprojectinner {
+    display: flex;
+}
+
+.mspmarginright,
+.mspmarginleft {
+    width: 100px;
+}
+
+.mspheadertext {
+    font-size: 50px;
+    margin-left: 15px;
+}
+
+span.muletext {
+    color: cornflowerblue;
+}
+
+.boldmessage{
+  font-size: 16px;
+      color: cornflowerblue;
+      font-weight: bold;
+      margin: auto;
+      width: fit-content;
+      margin-top: 15%;
+}
+
+table {
+    border-collapse: collapse;
+
+}
+
+th {
+  border: 1px solid #c8e5ff;
+      border-collapse: collapse;
+      padding: 10px;
+      font-family: sans-serif;
+      line-height: 22px;
+      text-align: left;
+      background-color: cornflowerblue;
+      color: white;
+      font-weight: 100;
+      font-size: 14px;
+}
+
+td ,th{
+    border: 1px solid #c8e5ff;
+    border-collapse: collapse;
+    padding: 10px;
+    font-family: sans-serif;
+    line-height: 22px;
+}
+
+
+.sectionheader{
+  height: 35%;
+}
+
+#appmenu span{
+  cursor: context-menu;;
+}
+
+.appname{
+  padding-left: 20px;
+    font-weight: bold;
+    color: cornflowerblue;
+    font-size: 18px;
+    font-family: math;
+}
+
+.upperpart{
+  color: black;
+}
+
+.upperpart svg{
+  width: 50px;
+}
+
+.lowerpart{
+  background-color: cornflowerblue;
+  height: 100vh;
+}
+
+.lowerpart h4{
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: white;
+    font-size: 1.5em;
+}
+
+div#homepage {
+    text-align: center;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.logodescr{
+  font-size: 8em;
+    font-family: math;
+}
+div#pschatpromptresponse {
+  width: 80%;
+      margin: auto;
+      padding: 20px;
+      height: 100vh;
+      overflow-y: scroll;
+      margin-top: 20px;
+      padding-top: 0px;
+}
+
+.pschatpromptinner {
+    display: flex;
+}
+.pschattext,
+.pschatcode{
+  padding: 40px;
+  background-color: white;
+  border-radius: 1px;
+      margin: 10px;
+}
+
+.pschattext{
+  font-size: 13px;
+      font-family: sans-serif;
+      color: #535353;
+      line-height: 25px;
+      padding: 0px;
+      padding-left: 40px;
+      padding-right: 40px;
+}
+
+.reqsent{
+  font-size: 16px;
+color: cornflowerblue;
+font-weight: bold;
+margin: auto;
+width: fit-content;
+margin-top: 33%;
+}
+
+.pschatcode {
+    font-family: monospace;
+    font-size: 14px;
+    border: 1px dashed gray;
+    border-radius: 9px;
+    overflow: scroll;
+}
+
+
+.pschatinput{
+   width: 40%;
+}
+
+.section.pschatpromopt{
+  margin-top: 0px;
+
+}
+
+.pschatinput{
+
+  height: 100vh;
+  overflow: hidden;
+background-color: #4c9dde;
+  padding: 20px;
+
+}
+
+div#sendpromptpschat {
+    width: fit-content;
+    margin: auto;
+    padding: 20px;
+}
+.sendpromptpschat {
+    width: fit-content;
+    margin: auto;
+    padding: 20px;
+}
+.pschatinput textarea {
+  width: -webkit-fill-available;
+
+  height: 350px;
+  font-size: 14px;
+  margin-top: 20px;
+  border-radius: 5px;
+  color: gray;
+  font-family: sans-serif;
+  padding: 31px;
+  line-height: 28px;
+}
+
+
+.diagpopup{
+
+    display: block;
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    border: 1px solid #cbe5fc;
+    width: 80%;
+    border-radius: 5px;
+    font-family: monospace;
+
+    min-height: 80%;
+    background-color: white;
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.diagbody {
+    padding: 10px;
+    min-height: 80%;
+}
+
+.diagwindow {
+    display: none;
+    padding: 8px;
+}
+
+#diagclose{
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 14px;
+    margin-left: auto;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.pheader button {
+    margin-left: 40px;
+    background-color: #559bd7;
+    color: white;
+}
+
+
+    #resmethod{
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #94c3eb;
+      padding: 10px;
+      margin: 1%;
+      outline: none;
+      user-select: none;
+    }
+
+
+    input.newbranchname {
+        margin: 0px;
+        padding: 0px;
+        padding-left: 5px;
+        border: 1px solid black;
+    }
+
+    .newbranch {
+        display: flex;
+        width: 100%;
+        margin-top: 23px;
+    }
+
+
+
+    .designcenter,
+    #loginner{
+        padding: 50px;
+        padding-top: 0px;
+        max-height: 300px;
+    }
+
+    #loginner{
+      overflow-y: scroll;
+      scrollbar-width: 3px;
+
+    }
+    .designcenter{
+        padding-top: 0px;
+        display: none;
+
+    }
+
+    .designcentersubmit {
+        width: fit-content;
+        margin: auto;
+    }
+
+    button#sendtodesigncenter {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    div#designbranches, div#designprojects {
+        margin-top: 38px;
+    }
+    .desigheader {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .designcenter button {
+        width: 150px;
+        background-color: #559ad6;
+        color: white;
+        border: 2px solid #559ad6;
+    }
+
+    div#designbranches input,
+    div#designbranches select,
+    div#designprojects select {
+        width: calc(100% - 168px);
+        height: 33px;
+        border-radius: 5px;
+        border: 1px solid #d6ecfe;
+    }
+
+   #prompts{
+   display: none;
+   }
+   div#prompts.popup {
+   display: block;
+   padding: 30px;
+   position: absolute;
+   top: 49px;
+   width: 90%;
+   background-color: white;
+   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+   }
+   .headerlabel{
+   color: white;
+   }
+   textarea#apispecjsonmandkeys,
+   textarea#apispecjsoninput{
+   background-color: aliceblue;
+   }
+   body{
+   font-size: 11px;
+   }
+   .section.utilsection .endfunctcontrols button{
+   background-color: #6dc0ed;
+   color: white;
+   text-transform: uppercase;
+   font-weight: bold;
+   }
+   #resname,
+   #respath{
+   margin-bottom: 20px;
+   }
+   #headersprompt, #responseprompt, #requestprompt {
+   background-color: #6dc0ed;
+   color: white;
+   text-transform: uppercase;
+   font-weight: bold;
+   }
+   .header.respathheader,
+   .header.resnameheader{
+   margin-bottom: 0px;
+   }
+   .requestcard,
+   .responsecard,
+   .headerscard
+   {
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+   background-color: #4c9dde;
+   padding: 30px;
+   }
+   .txtinput.responsecard{
+   padding: 30px;
+   margin-left: 15px;
+   margin-right: 15px;
+   }
+   .headerlabel {
+   padding: 8px;
+   }
+   .promptmandbutton,
+   .promptbutton {
+   margin-left: auto;
+   }
+   .promptsheader,
+   div#closelogs {
+   width: 20px;
+   height: 20px;
+   line-height: 20px;
+   text-align: center;
+   border-radius: 14px;
+   margin-left: auto;
+   background-color: white;
+   color: black;
+   font-weight: bold;
+   }
+   #logs{
+   display: none;
+   font-size: 12px;
+   }
+   div#logs {
+    background-color: aliceblue;
+
+}
+
+   #logs.popup {
+     display: block;
+     position: absolute;
+     left: 20%;
+     top: 5%;
+     border: 1px solid #cbe5fc;
+     width: 60%;
+     border-radius: 5px;
+     font-family: monospace;
+     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;  }
+     }
+   #loginner{
+   padding: 28px;
+   background-color: white;
+   }
+   #savelocaldevice{
+   width: fit-content;
+   }
+   .logline.waitresponse {
+   color: red;
+   font-weight: bold;
+   }
+
+   span.promptheader {
+        font-size: 15px;
+    }
+   #promptsinner p{
+     word-spacing: 2px;
+     border: 1px solid lightgray;
+     border-radius: 5px;
+     padding: 40px;
+     font-family: monospace;
+     line-height: 30px;
+     font-size: 15px;
+     background-color: #4c9dde;
+     color: white;
+     word-wrap: break-word;
+     margin-bottom: 61px;
+   }
+   .logline {
+   line-height: 20px;
+   }
+   .logs {
+       padding: 11px;
+       width: fit-content;
+       margin: auto;
+       text-align: left;
+   }
+   .section{
+   margin-top : 30px;
+   }
+   .section.utilsection {
+   padding: 40px;
+   padding-top: 0px;
+   }
+   .header {
+   padding-left: 5px;
+   margin-bottom: 18px;
+   height: 25px;
+   margin-top: 10px;
+   text-transform: uppercase;
+   display: flex;
+   }
+   body{
+   font-family: sans-serif;
+   margin : 0;
+   padding : 0;
+   }
+   .txtinput textarea.mandkeys{
+   height : 90px;
+   width: calc(100% - 23px);
+   }
+   input,
+   textarea {
+   margin: 1%;
+   outline: none;
+   padding : 10px;
+   }
+   .allinputs{
+   display : flex;
+   }
+   .txtinput{
+   width : 33%;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   }
+   .section.utilsection.testdatasection{
+   }
+   .section.utilsection button:hover{
+   background-color: #b7d7f2;
+   }
+   button {
+   background-color: #f2f1f1;
+   border: none;
+   border-radius: 5px;
+   padding: 8px;
+   /* color: white; */
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+   font-size: 11px;
+   letter-spacing: 0.9px;
+   margin-left: auto;
+   }
+   .controls.controlsgroup button {
+   margin-left: 10px;
+   }
+   .section.utilsection.testdatasection .txtinput textarea{
+   }
+   .section.utilsection.testdatasection .txtinput.apispecjson{
+   width: 55%;
+   margin: auto;
+   }
+   .section.utilsection.testdatasection .txtinput.apispecjsonmandatory{
+   width: 39%;
+   margin: auto;
+   }
+   .section.utilsection.testdatasection .txtinput textarea{
+   height : 400px;
+   }
+   .txtinput input{
+   height: 15px;
+   width: 90%;
+   /* border-radius: 7px; */
+   border: none;
+   border-bottom: 1px solid #94c3eb;
+   }
+   .txtinput textarea{
+   height: 250px;
+   width: calc(100% - 23px);
+   border-radius: 7px;
+   border: none;
+   }
+   .controls {
+   margin-left: auto;
+   display: flex;
+   }
+   .testdatacontrols{
+   width : 900px;
+   text-align : center;
+   margin : auto;
+   }
+   .testdatacontrols button{
+   width : 250px;
+   }
+   .menucontainre {
+   /* background-color: #34373a; */
+   padding: 7px;
+   /* color: white; */
+   display: flex;
+   height: 30px;
+   line-height: 30px;
+   /* border-bottom: 1px solid #cde6fb; */
+   font-family: sans-serif;
+   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 2px;
+   }
+   .powered {
+   margin-left: auto;
+   width: 500px;
+   text-align: right;
+   }
+   .sectionheader {
+   font-weight: bold;
+   margin-bottom: 14px;
+   display: flex;
+   font-size: 14px;
+   }
+   span.menuitem {
+   text-decoration: underline;
+   margin-right: 19px;
+   letter-spacing: 0.7px;
+   }
+::-webkit-scrollbar {
+  width: 1em;
+  width: 2px;
+  height: 2px;
+
+}
+::-webkit-scrollbar-track {
+  width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: lightgray;
+  outline: 1px solid slategrey;
+  width: 2px;
+}

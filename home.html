@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>PSChat</title>
+      <link type="text/css" rel="stylesheet" href="pschat.css"></link>
+      <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <!-- <script src="
+https://cdn.jsdelivr.net/npm/mermaid@10.4.0/dist/mermaid.min.js
+"></script> -->
+<script src="https://unpkg.com/mermaid@8.0.0/dist/mermaid.min.js"></script>
+   </head>
+   <body>
+
+      <div class="menucontainre">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+        <metadata>PSChat</metadata>
+        <g>
+          <g transform="translate(0.000000,462.000000) scale(0.100000,-0.100000)">
+            <path fill="#FE414D" d="M4472.9,4492.4C2377.1,4206.7,746.1,2682.3,347.4,637.7c-198.3-1025.5-51.2-2070.2,428.5-3036l172.7-343.2L520.1-4005.9c-236.7-692.9-424.3-1266.4-420-1270.7c4.3-4.3,601.2,179.1,1324,409.4l1317.6,420l251.6-119.4c1029.8-481.8,2172.6-599.1,3259.9-330.5c1669.4,413.6,3012.6,1709.9,3475.3,3355.8c194,695,226,1522.3,83.2,2228c-328.3,1618.2-1483.9,2963.6-3048.8,3545.6c-236.7,89.6-622.6,189.8-914.7,240.9C5568.8,4520.1,4760.7,4532.9,4472.9,4492.4z M5666.9,3722.8c1571.3-213.2,2906-1383.7,3326-2918.8c179.1-654.6,187.6-1385.8,23.4-2034c-336.9-1326.1-1341-2402.8-2645.9-2835.6c-1115.1-371-2351.7-243-3343.1,347.5c-91.7,53.3-174.8,98.1-183.4,98.1c-6.4,0-356.1-108.8-776.1-243.1c-417.9-132.2-761.1-234.5-761.1-223.9c0,8.5,110.9,343.3,247.3,742l247.3,724.9l-110.9,166.3c-138.6,208.9-362.5,663.1-445.6,904C594.7,334.9,1453.9,2420.1,3257.6,3332.6C4001.7,3707.8,4809.8,3837.9,5666.9,3722.8z"/>
+          </g>
+          <g transform="translate(750.000000,450.000000) scale(-0.0500000,-0.0500000)">
+            <path fill="#079FFF" d="M4472.9,4492.4C2377.1,4206.7,746.1,2682.3,347.4,637.7c-198.3-1025.5-51.2-2070.2,428.5-3036l172.7-343.2L520.1-4005.9c-236.7-692.9-424.3-1266.4-420-1270.7c4.3-4.3,601.2,179.1,1324,409.4l1317.6,420l251.6-119.4c1029.8-481.8,2172.6-599.1,3259.9-330.5c1669.4,413.6,3012.6,1709.9,3475.3,3355.8c194,695,226,1522.3,83.2,2228c-328.3,1618.2-1483.9,2963.6-3048.8,3545.6c-236.7,89.6-622.6,189.8-914.7,240.9C5568.8,4520.1,4760.7,4532.9,4472.9,4492.4z M5666.9,3722.8c1571.3-213.2,2906-1383.7,3326-2918.8c179.1-654.6,187.6-1385.8,23.4-2034c-336.9-1326.1-1341-2402.8-2645.9-2835.6c-1115.1-371-2351.7-243-3343.1,347.5c-91.7,53.3-174.8,98.1-183.4,98.1c-6.4,0-356.1-108.8-776.1-243.1c-417.9-132.2-761.1-234.5-761.1-223.9c0,8.5,110.9,343.3,247.3,742l247.3,724.9l-110.9,166.3c-138.6,208.9-362.5,663.1-445.6,904C594.7,334.9,1453.9,2420.1,3257.6,3332.6C4001.7,3707.8,4809.8,3837.9,5666.9,3722.8z"/>
+          </g>
+        </g>
+        </svg>
+          <span class="appname" > PSChat Accelerators </span>
+         <div class="powered " id="appmenu">
+           <span class="menuitem" >Mule Initializr</span>
+            <span class="menuitem" >OAS</span>
+            <span class="menuitem" >Test Data</span>
+            <span class="menuitem" >PSChat Prompts</span>
+            <span class="menuitem" id="addAccessToken">Settings</span>
+         </div>
+      </div>
+
+      <div class="section" id="homepage">
+        </br>
+        <div class="sectionheader">
+        </br>
+        </div>
+        <div class="upperpart">
+          <div class="applogo">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+            <metadata>PS Chat</metadata>
+            <g>
+              <g transform="translate(0.000000,462.000000) scale(0.100000,-0.100000)">
+                <path fill="#FE414D" d="M4472.9,4492.4C2377.1,4206.7,746.1,2682.3,347.4,637.7c-198.3-1025.5-51.2-2070.2,428.5-3036l172.7-343.2L520.1-4005.9c-236.7-692.9-424.3-1266.4-420-1270.7c4.3-4.3,601.2,179.1,1324,409.4l1317.6,420l251.6-119.4c1029.8-481.8,2172.6-599.1,3259.9-330.5c1669.4,413.6,3012.6,1709.9,3475.3,3355.8c194,695,226,1522.3,83.2,2228c-328.3,1618.2-1483.9,2963.6-3048.8,3545.6c-236.7,89.6-622.6,189.8-914.7,240.9C5568.8,4520.1,4760.7,4532.9,4472.9,4492.4z M5666.9,3722.8c1571.3-213.2,2906-1383.7,3326-2918.8c179.1-654.6,187.6-1385.8,23.4-2034c-336.9-1326.1-1341-2402.8-2645.9-2835.6c-1115.1-371-2351.7-243-3343.1,347.5c-91.7,53.3-174.8,98.1-183.4,98.1c-6.4,0-356.1-108.8-776.1-243.1c-417.9-132.2-761.1-234.5-761.1-223.9c0,8.5,110.9,343.3,247.3,742l247.3,724.9l-110.9,166.3c-138.6,208.9-362.5,663.1-445.6,904C594.7,334.9,1453.9,2420.1,3257.6,3332.6C4001.7,3707.8,4809.8,3837.9,5666.9,3722.8z"/>
+              </g>
+              <g transform="translate(750.000000,450.000000) scale(-0.0500000,-0.0500000)">
+                <path fill="#079FFF" d="M4472.9,4492.4C2377.1,4206.7,746.1,2682.3,347.4,637.7c-198.3-1025.5-51.2-2070.2,428.5-3036l172.7-343.2L520.1-4005.9c-236.7-692.9-424.3-1266.4-420-1270.7c4.3-4.3,601.2,179.1,1324,409.4l1317.6,420l251.6-119.4c1029.8-481.8,2172.6-599.1,3259.9-330.5c1669.4,413.6,3012.6,1709.9,3475.3,3355.8c194,695,226,1522.3,83.2,2228c-328.3,1618.2-1483.9,2963.6-3048.8,3545.6c-236.7,89.6-622.6,189.8-914.7,240.9C5568.8,4520.1,4760.7,4532.9,4472.9,4492.4z M5666.9,3722.8c1571.3-213.2,2906-1383.7,3326-2918.8c179.1-654.6,187.6-1385.8,23.4-2034c-336.9-1326.1-1341-2402.8-2645.9-2835.6c-1115.1-371-2351.7-243-3343.1,347.5c-91.7,53.3-174.8,98.1-183.4,98.1c-6.4,0-356.1-108.8-776.1-243.1c-417.9-132.2-761.1-234.5-761.1-223.9c0,8.5,110.9,343.3,247.3,742l247.3,724.9l-110.9,166.3c-138.6,208.9-362.5,663.1-445.6,904C594.7,334.9,1453.9,2420.1,3257.6,3332.6C4001.7,3707.8,4809.8,3837.9,5666.9,3722.8z"/>
+              </g>
+            </g>
+            </svg>
+          </div>
+          <div class="logodescr">PSChat</div>
+        </div>
+        <div class="lowerpart">
+          <h4>Accelerators</h4>
+        </div>
+      </div>
+
+
+      <div class="section utilsection oassection" id="oassection">
+         <div class="sectionheader">
+            Generate Base OAS Fragments
+            <div class="controls controlsgroup ">
+               <button id="savelocaldevice">Save on Local Device</button>
+               <button id="genprompts">Generate Prompts</button>
+                <button id="gentestplan">Generate Test Plan</button>
+                <button id= "gendoc">Generate Documentation</button>
+                <button id="gengenericoas">Generate Generic OAS</button>
+
+            </div>
+         </div>
+         <div class="allinputs">
+            <div class="txtinput">
+               <div class="header resnameheader">Resource Name</div>
+               <input type="text" id="resname" spellcheck="false"></input>
+            </div>
+            <div class="txtinput">
+               <div class="header respathheader">Resource Path</div>
+               <input type="text" id="respath" spellcheck="false"></input>
+            </div>
+            <div class="txtinput">
+              <div class="header respathheader">Method</div>
+              <select id="resmethod">
+                  <option>POST</option>
+                  <option>GET</option>
+                  <option>DELETE</option>
+                  <option>PUT</option>
+                  <option>OPTIONS</option>
+                  <option>HEAD</option>
+              </select>
+            </div>
+         </div>
+         <div class="allinputs">
+            <div class="txtinput requestcard">
+               <div class="header">
+                  <div class="headerlabel">Request</div>
+                  <div class="promptbutton">
+                     <button id="requestprompt">Get OAS</button>
+                  </div>
+               </div>
+               <textarea id="request" spellcheck="false"></textarea>
+               <div class="header">
+                  <div class="headerlabel">Mandatory Keys</div>
+                  <div class="promptmandbutton">
+                     <button class="loadkeys" onclick="loadRequestKeys()">Get</button>
+                  </div>
+               </div>
+               <textarea id="requestmandkeys" class="mandkeys" spellcheck="false"></textarea>
+            </div>
+            <div class="txtinput responsecard">
+               <div class="header">
+                  <div class="headerlabel">Response</div>
+                  <div class="promptbutton">
+                     <button id="responseprompt">Get OAS</button>
+                  </div>
+               </div>
+               <textarea id="response" spellcheck="false"></textarea>
+               <div class="header">
+                  <div class="headerlabel">Mandatory Keys</div>
+                  <div class="promptmandbutton">
+                     <button class="loadkeys" onclick="loadResponseKeys()">Get</button>
+                  </div>
+               </div>
+               <textarea id="responsemandkeys" class="mandkeys" spellcheck="false"></textarea>
+            </div>
+            <div class="txtinput headerscard">
+               <div class="header">
+                  <div class="headerlabel">Headers</div>
+                  <div class="promptbutton">
+                     <button id="headersprompt">Get OAS</button>
+                  </div>
+               </div>
+               <textarea id="headers" spellcheck="false"></textarea>
+               <div class="header">
+                  <div class="headerlabel">Mandatory Keys</div>
+                  <div class="promptmandbutton">
+                     <button class="loadkeys" onclick="loadHeadersKeys()">Get</button>
+                  </div>
+               </div>
+               <textarea id="headersmandkeys" class="mandkeys" spellcheck="false"></textarea>
+            </div>
+         </div>
+         <div id="logs"  class="logs" >
+            <div class="logsheader">
+               <div id="closelogs" class="closelogs">X</div>
+            </div>
+            <div class="designcenter" style="display:block">
+              <div class="desigheader">Push Codes to Design Center</div>
+              <div id="designprojects">
+                <button id="getprojects">Get Projects</button>
+                <select id="projectslist">
+                </select>
+              </div>
+              <div id="designbranches">
+                <button id="getbranches">Get Branches</button>
+                <select id="designbrancheslist">
+                </select>
+                <div class="newbranch">
+                  <input class="newbranchname" id="newbranchname"></input>
+                  <button id="createnewbranch">Create New Branch</button>
+                </div>
+              </div>
+
+
+              <div class="designcentersubmit">
+                <button id="sendtodesigncenter">Push to Design Center</button>
+              </div>
+            </div>
+
+            <div id="loginner">
+
+
+            </div>
+
+         </div>
+         <div id="prompts">
+            <div class="promptsheader">
+               <div id="closeprompts" class="closeprompts">X</div>
+            </div>
+            <div id="promptsinner">
+              <div id="reqbodyprompttext">
+                <div class="pheader">
+                  <span class="promptheader">Generate API resource request body OAS fragment using below prompt</span>
+                  <button>Send to PSChat</button>
+                </div>
+                <div class="promptbody">
+                </div>
+              </div>
+              <div id="respbodyprompttext">
+                <div class="pheader">
+                  <span class="promptheader">Generate API resource response body OAS fragment using below prompt</span>
+                  <button> Send to PSChat</button>
+                </div>
+                <div class="promptbody">
+                </div>
+              </div>
+              <div id="headerprompttext">
+                <div class="pheader">
+                  <span class="promptheader">Generate API resource headers OAS fragment using below prompt</span>
+                  <button> Send to PSChat</button>
+                </div>
+                <div class="promptbody">
+                </div>
+              </div>
+            </div>
+         </div>
+      </div>
+      <div class="section utilsection testdatasection" id="testdatasection">
+         <div class="sectionheader">
+            Generate Test Data
+            <div class="controls endfunctcontrols controlsgroup">
+               <button onclick="generateMissingKeyTestData()">Missing Req Fields</button>
+               <button onclick="generateEmptyValueTestData()">Empty Req Fields</button>
+               <button onclick="generateInvalidValueTestData()">Invalid Field values</button>
+            </div>
+         </div>
+         <div class="allinputs">
+            <div class="txtinput apispecjson">
+               <div class="header">Request</div>
+               <textarea id="apispecjsoninput" spellcheck="false"></textarea>
+            </div>
+            <div class="txtinput apispecjsonmandatory">
+               <div class="header">Mandatory Keys
+                  <button class="loadkeys" onclick="loadAPISpecJsonKeys()">Get All</button>
+               </div>
+               <textarea id="apispecjsonmandkeys" class="mandkeys" spellcheck="false"></textarea>
+            </div>
+         </div>
+      </div>
+
+
+      <div class="section pschatpromopt" id="pschatpromptsection">
+
+        <div class="pschatpromptinner">
+          <div class="pschatinput">
+
+          <textarea id="pschatinputtxtarea" spellcheck="false" placeholder="Hello I am PSChat. Please write your query here and I will try to help you!"></textarea>
+            <div id="sendpromptpschat">
+                <button>Send to PSChat</button>
+            </div>
+          </div>
+          <div id="pschatpromptresponse">
+            <div class="logodescr" style="color: cornflowerblue;text-align: center;margin-top: 28%">PSChat</div>
+
+          </div>
+      </div>
+
+      </div>
+
+
+      <div class="section mulestartproject" id="mulestartproject">
+        <div class="mulestartprojectinner">
+
+          <div class="mspmarginleft"></div>
+          <div class="mspcontainer">
+            <div class="mspheader">
+              <div class="mspheaderlogo"></div>
+              <div class="mspheadertext">
+                <span class="muletext">mule</span>
+                <span class="muleinit">initializr</span>
+              </div>
+            </div>
+            <div class="mspbody">
+              <div class="mspbodyleft">
+
+                <div class="fetchprojects">
+                  <input type="text" id="exchprojname"></input>
+                  <button id="searchexchange">Search Exchange</button>
+                </div>
+
+                <div>
+                  <select id="exchangeprojects">
+                    <option>---select--- </option>
+                  </select>
+                </div>
+
+                <div id="apispecdetails">
+                  <pre>
+                  </pre>
+                </div>
+
+              </div>
+              <div class="mspbodyright">
+
+                <div id="projectdetail">
+                  <div class="mspdtlabel">
+                    <label>Mulesoft Project Name</label>
+                    <div>
+                      <input type="text" id="muleprojname"></input>
+                    </div>
+                  </div>
+
+                  <div class="mspdtlabel">
+                    <label>Version</label>
+                    <div>
+                      <input type="text" id="muleprojversion"></input>
+                    </div>
+                  </div>
+
+                  <div class="mulearchtypebutton">
+                    <button id="generatemulearchtype">Generate</button>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="mspmarginright">
+
+          </div>
+
+
+
+        </div>
+      </div>
+
+      <div class="diagwindow">
+        <div class="diagwindowinner">
+            <div class="diagheader">
+              <div class="diaghlabel">
+
+              </div>
+              <div id="diagclose">X</div>
+
+            </div>
+            <div class="diagbody"></div>
+        </div>
+      </div>
+
+
+
+
+      <script>
+
+
+          //------------------------------------------------------------------------------
+
+          function getAllKeys(jsonObj) {
+              let keys = [];
+
+              for (let key in jsonObj) {
+                  keys.push(key);
+
+                  if(Array.isArray(jsonObj[key]) && jsonObj[key] !== null && jsonObj[key] !== undefined ){
+                    for(let i =0; i<jsonObj[key].length; i++){
+                        keys = keys.concat(getAllKeys(jsonObj[key][i]));
+                    }
+
+                  }
+                  else if (typeof jsonObj[key] === 'object' && jsonObj[key] !== null) {
+                      keys = keys.concat(getAllKeys(jsonObj[key]));
+                  }
+              }
+
+              return keys;
+          }
+
+          //----------------------------------------------------------------------------
+
+          function createInvalidValueTypeCopies(jsonObject, keysArray) {
+              let result = {};
+
+              keysArray.forEach(key => {
+                  let copy = deepCopyAndInvalidateKey(jsonObject, key);
+                  result["Invalid_" + key] = copy;
+              });
+
+              return result;
+          }
+
+          function deepCopyAndInvalidateKey(obj, keyToInvalidate) {
+              let copy;
+
+              if (Array.isArray(obj)) {
+                  copy = obj.map(item => deepCopyAndInvalidateKey(item, keyToInvalidate));
+              } else if (typeof obj === 'object' && obj !== null) {
+                  copy = {};
+                  for (let key in obj) {
+                      if (key === keyToInvalidate) {
+                          if (typeof obj[key] === 'string') {
+                              copy[key] = {}; // Invalid value for string
+                          } else if (typeof obj[key] === 'object') {
+                              copy[key] = ''; // Invalid value for object
+                          } else if (typeof obj[key] === 'boolean') {
+                              copy[key] = []; // Invalid value for boolean
+                          } else {
+                              copy[key] = obj[key];
+                          }
+                      } else {
+                          copy[key] = deepCopyAndInvalidateKey(obj[key], keyToInvalidate);
+                      }
+                  }
+              } else {
+                  copy = obj;
+              }
+
+              return copy;
+          }
+
+
+          function createMissingRequiredKeyCopies(jsonObject, keysArray) {
+              let result = {};
+
+              keysArray.forEach(key => {
+                  let copy = deepCopyAndRemoveKey(jsonObject, key);
+                  const nk = "Missing"+key.charAt(0).toUpperCase()+key.substring(1, key.length);
+                  result[nk] = copy;
+              });
+
+              return result;
+          }
+
+          function deepCopyAndRemoveKey(obj, keyToRemove) {
+              let copy;
+
+              if (Array.isArray(obj)) {
+                  copy = obj.map(item => deepCopyAndRemoveKey(item, keyToRemove));
+              } else if (typeof obj === 'object' && obj !== null) {
+                  copy = {};
+                  for (let key in obj) {
+                      if (key === keyToRemove) continue;
+                      copy[key] = deepCopyAndRemoveKey(obj[key], keyToRemove);
+                  }
+              } else {
+                  copy = obj;
+              }
+
+              return copy;
+          }
+
+
+          function createEmptyOrNullValueCopies(jsonObject, keysArray) {
+              let result = {};
+
+              keysArray.forEach(key => {
+                  let copy = deepCopyAndEmptyKey(jsonObject, key);
+                  result["EmptyOrNull_" + key] = copy;
+              });
+
+              return result;
+          }
+
+          function deepCopyAndEmptyKey(obj, keyToEmpty) {
+              let copy;
+
+              if (Array.isArray(obj)) {
+                  copy = obj.map(item => deepCopyAndEmptyKey(item, keyToEmpty));
+              } else if (typeof obj === 'object' && obj !== null) {
+                  copy = {};
+                  for (let key in obj) {
+                      if (key === keyToEmpty) {
+                          if (typeof obj[key] === 'string') {
+                              copy[key] = "";
+                          } else if (Array.isArray(obj[key]) || typeof obj[key] === 'object' || typeof obj[key] === 'boolean') {
+                              copy[key] = null;
+                          } else {
+                              copy[key] = obj[key];
+                          }
+                      } else {
+                          copy[key] = deepCopyAndEmptyKey(obj[key], keyToEmpty);
+                      }
+                  }
+              } else {
+                  copy = obj;
+              }
+
+              return copy;
+          }
+
+
+          //------------------------------------------------------------------------------
+
+
+
+      </script>
+
+      <script type="text/javascript" async="" src="chatgpt.js"></script>
+
+
+
+   </body>
+</html>
